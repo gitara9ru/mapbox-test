@@ -8,6 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@types/mapbox-gl": "^2.4.2",
+    "dotenv": "^8.6.0",
+    "mapbox-gl": "^2.4.1",
+    "scriptjs": "^2.5.9",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2",
