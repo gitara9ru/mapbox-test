@@ -5,18 +5,28 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-77.032, 38.913]
+        "coordinates": [
+          -77.032,
+          38.913
+        ]
       },
       "properties": {
         "title": "Mapbox",
-        "description": "Washington, D.C."
+        "description": "Washington, D.C.",
+        "zipCode": "取得方法不明",
+        "elevation": "取得方法不明",
+        "darkness": 0,
+        "weathers": []
       }
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-122.414, 37.776]
+        "coordinates": [
+          -122.414,
+          37.776
+        ]
       },
       "properties": {
         "title": "Mapbox",

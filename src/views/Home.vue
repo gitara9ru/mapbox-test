@@ -1,16 +1,26 @@
 <template>
-  <hello-world />
+  <v-container fluid>
+    <v-row>
+      <v-col>
+        <router-view />
+      </v-col>
+      <v-col>
+        <map-test />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
-
 <script lang="ts">
-import Vue from "vue";
-import HelloWorld from "../components/HelloWorld.vue";
+import { Component, Vue, Prop } from "vue-property-decorator";
+import SpotDetail from "@/components/SpotDetail.vue";
+import MapTest from "@/components/MapTest.vue";
+import { mapModule } from "@/store/modules/Map";
 
-export default Vue.extend({
-  name: "Home",
-
-  components: {
-    HelloWorld,
-  },
-});
+@Component({ components: { SpotDetail, MapTest } })
+export default class Home extends Vue {
+  created() {
+    mapModule.initializeCenter();
+  }
+}
 </script>
+<style scoped></style>

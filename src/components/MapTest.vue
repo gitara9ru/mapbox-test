@@ -4,10 +4,17 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import dataset from "@/const/dataset.json";
-import { GeoJSON, FeatureCollection } from "geojson";
+import {  FeatureCollection } from "geojson";
 import mapboxgl from "mapbox-gl";
 
 let map!: mapboxgl.Map;
+const leftBottom = new mapboxgl.LngLat(139.367779, 35.5145);
+const rightTop = new mapboxgl.LngLat(139.90311, 35.77641);
+
+const center = {
+  lat: (leftBottom.lat + rightTop.lat) / 2,
+  lng: (leftBottom.lng + rightTop.lng) / 2,
+};
 
 @Component({})
 export default class MapTest extends Vue {
@@ -23,6 +30,16 @@ export default class MapTest extends Vue {
       new mapboxgl.Marker(el).setLngLat(geometry.coordinates).addTo(map);
     }
   }
+
+  resetBounds() {
+    const bounds = new mapboxgl.LngLatBounds([
+      leftBottom.lng,
+      leftBottom.lat,
+      rightTop.lng,
+      rightTop.lat,
+    ]);
+    map.fitBounds(bounds, { padding: 20 });
+  }
   mounted() {
     // templateのdomが(html要素)がmountされた後に呼ばれるフック
     const token = process.env.VUE_APP_MAPBOX_TOKEN;
@@ -32,28 +49,18 @@ export default class MapTest extends Vue {
       container: "map",
       style: "mapbox://styles/mapbox/light-v10",
       accessToken: token,
-      center: [-96, 37.8],
+      center: [center.lng, center.lat],
       zoom: 3,
     });
+
     this.procDataset(dataset);
+    map.addControl(new mapboxgl.NavigationControl());
+    this.resetBounds();
   }
 }
 </script>
 <style scoped>
 #map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
   margin: auto;
-}
-
-.mypoint {
-  /* background-image: url("/images/logo.png");
-  background-size: cover; */
-  background-color: black;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
 }
 </style>

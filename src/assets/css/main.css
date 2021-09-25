@@ -1,8 +1,7 @@
 .mypoint {
-  background-image: url("/favicon.ico");
+  background-image: url("/icons/star.svg");
   background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 }

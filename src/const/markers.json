@@ -1,0 +1,369 @@
+{
+	"type": "FeatureCollection",
+	"query": [
+	    "park"
+	],
+	"features": [
+	    {
+		"id": "poi.472446432710",
+		"type": "Feature",
+		"place_type": [
+		    "poi"
+		],
+		"relevance": 1,
+		"properties": {
+		    "foursquare": "4b5bf228f964a520671e29e3",
+		    "landmark": true,
+		    "address": "豊洲2-1",
+		    "category": "park, leisure"
+		},
+		"text_ja": "豊洲公園",
+		"language_ja": "ja",
+		"place_name_ja": "豊洲公園, 豊洲2-1, 東京都, 東京都 135-0061, 日本",
+		"text": "豊洲公園",
+		"language": "ja",
+		"place_name": "豊洲公園, 豊洲2-1, 東京都, 東京都 135-0061, 日本",
+		"center": [
+		    139.792332,
+		    35.653634
+		],
+		"geometry": {
+		    "coordinates": [
+			139.792332,
+			35.653634
+		    ],
+		    "type": "Point"
+		},
+		"context": [
+		    {
+			"id": "postcode.8134627310125750",
+			"text_ja": "135-0061",
+			"text": "135-0061"
+		    },
+		    {
+			"id": "locality.11956902086641820",
+			"wikidata": "Q215175",
+			"text_ja": "江東区",
+			"language_ja": "ja",
+			"text": "江東区",
+			"language": "ja"
+		    },
+		    {
+			"id": "place.8168711922111140",
+			"wikidata": "Q1490",
+			"text_ja": "東京都",
+			"language_ja": "ja",
+			"text": "東京都",
+			"language": "ja"
+		    },
+		    {
+			"id": "region.15637623541111140",
+			"wikidata": "Q1490",
+			"short_code": "JP-13",
+			"text_ja": "東京都",
+			"language_ja": "ja",
+			"text": "東京都",
+			"language": "ja"
+		    },
+		    {
+			"id": "country.9827633378530190",
+			"wikidata": "Q17",
+			"short_code": "jp",
+			"text_ja": "日本",
+			"language_ja": "ja",
+			"text": "日本",
+			"language": "ja"
+		    }
+		]
+	    },
+	    {
+		"id": "poi.807453854205",
+		"type": "Feature",
+		"place_type": [
+		    "poi"
+		],
+		"relevance": 1,
+		"properties": {
+		    "foursquare": "4f7805dde4b015b23d9c70a1",
+		    "landmark": true,
+		    "address": "晴海1-3地先",
+		    "category": "park, leisure"
+		},
+		"text_ja": "晴海臨海公園",
+		"language_ja": "ja",
+		"place_name_ja": "晴海臨海公園, 晴海1-3地先, 東京都, 東京都 104-0053, 日本",
+		"text": "晴海臨海公園",
+		"language": "ja",
+		"place_name": "晴海臨海公園, 晴海1-3地先, 東京都, 東京都 104-0053, 日本",
+		"center": [
+		    139.78597,
+		    35.655225
+		],
+		"geometry": {
+		    "coordinates": [
+			139.78597,
+			35.655225
+		    ],
+		    "type": "Point"
+		},
+		"context": [
+		    {
+			"id": "postcode.14833808511638630",
+			"text_ja": "104-0053",
+			"text": "104-0053"
+		    },
+		    {
+			"id": "locality.15076944254395670",
+			"wikidata": "Q212704",
+			"text_ja": "中央区",
+			"language_ja": "ja",
+			"text": "中央区",
+			"language": "ja"
+		    },
+		    {
+			"id": "place.8168711922111140",
+			"wikidata": "Q1490",
+			"text_ja": "東京都",
+			"language_ja": "ja",
+			"text": "東京都",
+			"language": "ja"
+		    },
+		    {
+			"id": "region.15637623541111140",
+			"wikidata": "Q1490",
+			"short_code": "JP-13",
+			"text_ja": "東京都",
+			"language_ja": "ja",
+			"text": "東京都",
+			"language": "ja"
+		    },
+		    {
+			"id": "country.9827633378530190",
+			"wikidata": "Q17",
+			"short_code": "jp",
+			"text_ja": "日本",
+			"language_ja": "ja",
+			"text": "日本",
+			"language": "ja"
+		    }
+		]
+	    },
+	    {
+		"id": "poi.1047972039097",
+		"type": "Feature",
+		"place_type": [
+		    "poi"
+		],
+		"relevance": 1,
+		"properties": {
+		    "foursquare": "4b64d0b2f964a5203ed22ae3",
+		    "landmark": true,
+		    "wikidata": "Q11585781",
+		    "address": "佃2-1-5",
+		    "category": "park, leisure"
+		},
+		"text_ja": "石川島公園",
+		"language_ja": "ja",
+		"place_name_ja": "石川島公園, 佃2-1-5, 東京都, 東京都 104-0051, 日本",
+		"text": "石川島公園",
+		"language": "ja",
+		"place_name": "石川島公園, 佃2-1-5, 東京都, 東京都 104-0051, 日本",
+		"center": [
+		    139.7868095,
+		    35.6687
+		],
+		"geometry": {
+		    "coordinates": [
+			139.7868095,
+			35.6687
+		    ],
+		    "type": "Point"
+		},
+		"context": [
+		    {
+			"id": "postcode.16954534263405070",
+			"text_ja": "104-0051",
+			"text": "104-0051"
+		    },
+		    {
+			"id": "locality.15076944254395670",
+			"wikidata": "Q212704",
+			"text_ja": "中央区",
+			"language_ja": "ja",
+			"text": "中央区",
+			"language": "ja"
+		    },
+		    {
+			"id": "place.8168711922111140",
+			"wikidata": "Q1490",
+			"text_ja": "東京都",
+			"language_ja": "ja",
+			"text": "東京都",
+			"language": "ja"
+		    },
+		    {
+			"id": "region.15637623541111140",
+			"wikidata": "Q1490",
+			"short_code": "JP-13",
+			"text_ja": "東京都",
+			"language_ja": "ja",
+			"text": "東京都",
+			"language": "ja"
+		    },
+		    {
+			"id": "country.9827633378530190",
+			"wikidata": "Q17",
+			"short_code": "jp",
+			"text_ja": "日本",
+			"language_ja": "ja",
+			"text": "日本",
+			"language": "ja"
+		    }
+		]
+	    },
+	    {
+		"id": "poi.25769830552",
+		"type": "Feature",
+		"place_type": [
+		    "poi"
+		],
+		"relevance": 1,
+		"properties": {
+		    "foursquare": "4b6d31c0f964a520f06a2ce3",
+		    "landmark": true,
+		    "address": "豊洲2-4-9",
+		    "category": "dog park, pet, dog, park, leisure"
+		},
+		"text_ja": "ILIO Total Dog Produce",
+		"place_name_ja": "ILIO Total Dog Produce, 豊洲2-4-9, 東京都, 東京都 135-0061, 日本",
+		"text": "ILIO Total Dog Produce",
+		"place_name": "ILIO Total Dog Produce, 豊洲2-4-9, 東京都, 東京都 135-0061, 日本",
+		"center": [
+		    139.79163,
+		    35.655886
+		],
+		"geometry": {
+		    "coordinates": [
+			139.79163,
+			35.655886
+		    ],
+		    "type": "Point"
+		},
+		"context": [
+		    {
+			"id": "postcode.8134627310125750",
+			"text_ja": "135-0061",
+			"text": "135-0061"
+		    },
+		    {
+			"id": "locality.11956902086641820",
+			"wikidata": "Q215175",
+			"text_ja": "江東区",
+			"language_ja": "ja",
+			"text": "江東区",
+			"language": "ja"
+		    },
+		    {
+			"id": "place.8168711922111140",
+			"wikidata": "Q1490",
+			"text_ja": "東京都",
+			"language_ja": "ja",
+			"text": "東京都",
+			"language": "ja"
+		    },
+		    {
+			"id": "region.15637623541111140",
+			"wikidata": "Q1490",
+			"short_code": "JP-13",
+			"text_ja": "東京都",
+			"language_ja": "ja",
+			"text": "東京都",
+			"language": "ja"
+		    },
+		    {
+			"id": "country.9827633378530190",
+			"wikidata": "Q17",
+			"short_code": "jp",
+			"text_ja": "日本",
+			"language_ja": "ja",
+			"text": "日本",
+			"language": "ja"
+		    }
+		]
+	    },
+	    {
+		"id": "poi.927712958590",
+		"type": "Feature",
+		"place_type": [
+		    "poi"
+		],
+		"relevance": 1,
+		"properties": {
+		    "foursquare": "4b6df616f964a520449f2ce3",
+		    "landmark": true,
+		    "wikidata": "Q11513767",
+		    "address": "豊洲2",
+		    "category": "park, leisure"
+		},
+		"text_ja": "春海橋公園",
+		"language_ja": "ja",
+		"place_name_ja": "春海橋公園, 豊洲2, 東京都, 東京都 135-0061, 日本",
+		"text": "春海橋公園",
+		"language": "ja",
+		"place_name": "春海橋公園, 豊洲2, 東京都, 東京都 135-0061, 日本",
+		"center": [
+		    139.790778,
+		    35.656903
+		],
+		"geometry": {
+		    "coordinates": [
+			139.790778,
+			35.656903
+		    ],
+		    "type": "Point"
+		},
+		"context": [
+		    {
+			"id": "postcode.8134627310125750",
+			"text_ja": "135-0061",
+			"text": "135-0061"
+		    },
+		    {
+			"id": "locality.11956902086641820",
+			"wikidata": "Q215175",
+			"text_ja": "江東区",
+			"language_ja": "ja",
+			"text": "江東区",
+			"language": "ja"
+		    },
+		    {
+			"id": "place.8168711922111140",
+			"wikidata": "Q1490",
+			"text_ja": "東京都",
+			"language_ja": "ja",
+			"text": "東京都",
+			"language": "ja"
+		    },
+		    {
+			"id": "region.15637623541111140",
+			"wikidata": "Q1490",
+			"short_code": "JP-13",
+			"text_ja": "東京都",
+			"language_ja": "ja",
+			"text": "東京都",
+			"language": "ja"
+		    },
+		    {
+			"id": "country.9827633378530190",
+			"wikidata": "Q17",
+			"short_code": "jp",
+			"text_ja": "日本",
+			"language_ja": "ja",
+			"text": "日本",
+			"language": "ja"
+		    }
+		]
+	    }
+	],
+	"attribution": "NOTICE: © 2021 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service (https://www.mapbox.com/about/maps/). This response and the information it contains may not be retained. POI(s) provided by Foursquare."
+    }
