@@ -1,5 +1,16 @@
 <template>
   <v-container>
+    <div
+      class="line-it-button"
+      data-lang="ja"
+      data-type="share-b"
+      data-ver="3"
+      data-url="https://vuetifyjs.com/ja/components/ratings/#card-ratings"
+      data-color="default"
+      data-size="small"
+      data-count="true"
+      style="display: none"
+    ></div>
     <my-title title="おすすめスポット" />
     <v-virtual-scroll :items="candidates" :item-height="50" height="250">
       <template v-slot:default="{ item }">

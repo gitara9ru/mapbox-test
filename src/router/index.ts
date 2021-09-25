@@ -11,16 +11,6 @@ const routes: Array<RouteConfig> = [
     path: "/",
     name: "Home",
     component: Home,
-    children: [
-      {
-        path: "detail",
-        component: SpotDetail,
-      },
-      {
-        path: "*",
-        component: Candidates,
-      },
-    ],
   },
 ];
 

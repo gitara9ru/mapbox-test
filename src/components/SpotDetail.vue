@@ -2,51 +2,51 @@
   <v-container>
     <my-title :title="detail.name" />
     <v-container>
-    <v-row>
-      総合
-      <v-spacer></v-spacer>
-      <v-rating
-        :value="average"
-        background-color="black lighten-3"
-        color="black"
-        readonly
-      ></v-rating>
-    </v-row>
-    <v-row v-for="rating in Object.values(ratings)" :key="rating.text">
-      {{ rating.text }}
-      <v-spacer></v-spacer>
-      <v-rating
-        :value="rating.value"
-        background-color="black lighten-3"
-        color="black"
-        readonly
-      ></v-rating>
-    </v-row>
-    <v-subheader>SNSで共有</v-subheader>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
-    />
-    <v-row>
-      <div class="share-network-list">
-        <ShareNetwork
-          v-for="network in networks"
-          :network="network.network"
-          :key="network.network"
-          :style="{ backgroundColor: network.color }"
-          :url="sharing.url"
-          :title="sharing.title"
-          :description="sharing.description"
-          :quote="sharing.quote"
-          :hashtags="sharing.hashtags"
-          :twitterUser="sharing.twitterUser"
-        >
-          <i :class="network.icon"></i>
-        </ShareNetwork>
-      </div>
-    </v-row>
+      <v-row>
+        総合
+        <v-spacer></v-spacer>
+        <v-rating
+          :value="average"
+          background-color="black lighten-3"
+          color="black"
+          readonly
+        ></v-rating>
+      </v-row>
+      <v-row v-for="rating in Object.values(ratings)" :key="rating.text">
+        {{ rating.text }}
+        <v-spacer></v-spacer>
+        <v-rating
+          :value="rating.value"
+          background-color="black lighten-3"
+          color="black"
+          readonly
+        ></v-rating>
+      </v-row>
+      <v-subheader>SNSで共有</v-subheader>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+        crossorigin="anonymous"
+      />
+      <v-row>
+        <div class="share-network-list">
+          <ShareNetwork
+            v-for="network in networks"
+            :network="network.network"
+            :key="network.network"
+            :style="{ backgroundColor: network.color }"
+            :url="sharing.url"
+            :title="sharing.title"
+            :description="sharing.description"
+            :quote="sharing.quote"
+            :hashtags="sharing.hashtags"
+            :twitterUser="sharing.twitterUser"
+          >
+            <i :class="network.icon"></i>
+          </ShareNetwork>
+        </div>
+      </v-row>
     </v-container>
   </v-container>
 </template>
@@ -54,11 +54,23 @@
 import { Component, Vue, Prop } from "vue-property-decorator";
 import MyTitle from "@/components/MyTitle.vue";
 import { mapModule } from "@/store/modules/Map";
+import dataset from "@/const/dataset.json"
 
 @Component({ components: { MyTitle } })
 export default class SpotDetail extends Vue {
   get detail() {
-    return mapModule.detail;
+    const lat = Number(this.$route.query.lat);
+    const lng = Number(this.$route.query.lng);
+    const detail = this.findDetail(lat, lng);
+    return detail;
+  }
+
+  findDetail(lat: number, lng: number) {
+    const dataList = dataset.features.map(e => e.geometry.coordinates)
+    const detail = dataList.find((e) => {
+      return e[0] === lat && e[1] === lng;
+    });
+    return detail;
   }
 
   get ratings() {

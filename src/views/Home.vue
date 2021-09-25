@@ -2,9 +2,6 @@
   <v-container fluid>
     <v-row>
       <v-col>
-        <router-view />
-      </v-col>
-      <v-col>
         <map-test />
       </v-col>
     </v-row>
